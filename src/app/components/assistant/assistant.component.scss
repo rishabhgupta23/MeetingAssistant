@@ -1,0 +1,58 @@
+.main-div{
+    height: 100vh;
+}
+.logo-div{
+    position: absolute;
+    margin-left: 2%;
+}
+.logo-img{
+    height: 6rem;
+    box-shadow: 1px 1px 2px #00000061;
+}
+.heading-div{
+
+    height: 15%;
+    background-color: white;
+    display: table;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 4px #00000026;
+}
+.heading{
+    display: table-cell;
+    vertical-align: middle
+}
+.select-div{
+
+    text-align: center;
+    margin-top: 4%;
+}
+
+.start-button{
+    background-color: #C3002F;
+    vertical-align: super;
+    margin-left: 22px;
+}
+
+.stop-button{
+    background-color: white;
+    color: #C3002F;
+    vertical-align: super;
+    margin-left: 22px;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color:#C3002F;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label {
+    color: #C3002F;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    color: #00000066;
+}
+
+.mat-input-element {
+    caret-color: #00000066;
+}

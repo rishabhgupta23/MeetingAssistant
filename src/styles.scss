@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face{
+    font-family: nissan-bold;
+    src:url(assets/fonts/NissanBrandBold.otf) format("opentype"),
+        url(assets/fonts/NissanBrandBold.woff) format('woff'),;
+}
+
+@font-face{
+    font-family: nissan-regular;
+    src:url(assets/fonts/NissanBrandRegular.otf) format("opentype"),
+        url(assets/fonts/NissanBrandRegular.woff) format('woff'),;
+}
+
+*{
+    padding:0;
+    border: 0;
+    margin:0;
+}
+
+.nb-font{
+    font-family: 'nissan-bold';
+    }
+    
+.nr-font{
+        font-family: 'nissan-regular';
+        }
+
+body{
+    background-color: #F2F2F5;
+}
+

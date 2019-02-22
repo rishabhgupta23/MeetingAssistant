@@ -1,0 +1,27 @@
+<div class="main-div">
+  <div class="logo-div">
+    <img class="logo-img" src="../../../assets/images/branding.png">
+  </div>
+  <div class="heading-div">
+    <h1 class="nb-font heading">NDI Meeting Assistant</h1>
+  </div>
+  <div class="select-div">
+    <!-- <form class="nb-font"> -->
+      <mat-form-field appearance="outline" class="nr-font">
+        <mat-label>Meeting Room</mat-label>
+        <mat-select placeholder="Select Meeting Room" [(ngModel)]="request.room_name">
+          <mat-option *ngFor="let room of rooms" [value]="room" class="nr-font"> 
+            {{room}}
+          </mat-option>
+        </mat-select>
+        <mat-hint>Please select meeting room</mat-hint>
+      </mat-form-field>
+      <button mat-fab class="start-button" [disabled]="request.operation==='start'?true:false||request.room_name==='NOT_SELECTED'?true:false"(click)="startMeeting(request,'start')">
+        <mat-icon>airplay</mat-icon>
+      </button>
+      <button mat-fab class="stop-button" [disabled]="request.operation==='start'?false:true" (click)="stopMeeting()">
+        <mat-icon>stop</mat-icon>
+      </button>
+    <!-- </form> -->
+  </div>
+</div>

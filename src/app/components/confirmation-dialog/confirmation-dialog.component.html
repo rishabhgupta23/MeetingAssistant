@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Notification</h1>
+<div mat-dialog-content>
+  <p>We will be recording the audio to send automated minutes.Please allow the browser when it prompts for access to mic.</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="'start'" cdkFocusInitial>Ok</button>
+</div>
